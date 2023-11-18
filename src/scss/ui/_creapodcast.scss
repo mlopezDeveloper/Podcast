@@ -1,0 +1,13 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.crea-grid{
+    @include m.tablet { 
+        @include m.grid(2, 2rem);
+        align-items: center;
+    }
+
+    h2{
+        @include m.headingBorder( v.$secundario, v.$primario );
+    }
+}
